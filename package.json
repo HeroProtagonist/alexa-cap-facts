@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "scrape": "node lib/scraper.js > lib/facts-$(date +%Y-%m-%d).js"
+    "scrape": "node lib/scraper.js > lib/facts-$(date +%Y-%m-%d).js",
+    "zip": "zip -r dist.zip index.js lib node_modules -x \"*.DS_Store\""
   },
   "dependencies": {
     "alexa-sdk": "^1.0.10",
